@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <nav class="container nav">
+        <nav class="container nav" role ="navigation" aria-label="Main navigation">
             <a hreft="#" class="logo">Mernify</a>
             <ul class="nav-link">
                 <li><a href="#section1">Home</a></li>
@@ -16,5 +16,58 @@
                 <li><a href="#section4">Contact</a></li>
         </nav>
     </header>
+    <main>
+        <section class="hero container">
+          <div class="hero-text">
+            <h1>Accessible Web Design for Everyone</h1>
+            <p>We build responsive, inclusive, and beautiful websites using the MERN stack.</p>
+            <a href="#contact" class="btn" aria-label="Click to get in touch with us">Get Started</a>
+          </div>
+        </section>
+    
+        <section id="about" class="about container">
+          <h2>About Us</h2>
+          <p>At MERNify, we specialize in creating accessible, user-friendly websites for businesses and individuals worldwide.</p>
+        </section>
+    
+        <section id="services" class="services container">
+          <h2>Our Services</h2>
+          <div class="service-grid">
+            <article class="service">
+              <h3>Responsive Design</h3>
+              <p>Seamless user experiences on mobile, tablet, and desktop.</p>
+            </article>
+            <article class="service">
+              <h3>Accessibility Audits</h3>
+              <p>Ensure your website meets WCAG 2.1 standards for all users.</p>
+            </article>
+            <article class="service">
+              <h3>Semantic Development</h3>
+              <p>Code built with semantic HTML5 for better SEO and accessibility.</p>
+            </article>
+          </div>
+        </section>
+    
+        <section id="contact" class="contact container">
+          <h2>Contact Us</h2>
+          <form aria-label="Contact form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required aria-describedby="nameHelp">
+            <small id="nameHelp" class="form-text text-muted">Please enter your full name.</small>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="messagehelp"></textarea>
+            <small id="messagehelp" class="form-text text-muted">Write a short message describing your inquiry.</small>
+    
+            <button type="submit" class="btn" aria-label="Click to submit the message">Send Message</button>
+          </form>
+        </section>
+      </main>
+    </body>
+    </html>
 </body>
 </html>
