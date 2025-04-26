@@ -1,0 +1,155 @@
+/* Base styles */
+:root {
+    --primary-color: #173EA1;
+    --secondary-color: #173EA1;
+    --background-color: #303e58;
+    --text-color: #f8fafc;
+    --accent-color: #facc15;
+  }
+
+  
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Navigation */
+  header {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+  }
+  .logo {
+    max-width: 150px;
+    font-size: 2rem;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Hero Section */
+  .hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 4rem 0;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .service {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 4rem 0;
+  }
+  
+  form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  input, textarea {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+  .social-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  .social-links a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  
